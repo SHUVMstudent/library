@@ -7,7 +7,7 @@ String book
 String student
 String librarian
 
-string toString(){
+String toString(){
 "$location, $openingHours"
 }
 

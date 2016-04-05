@@ -7,7 +7,7 @@ String tutor
 String department
 String description
 
-string toString(){
+String toString(){
 "$title, $code, $department"
 }
 
