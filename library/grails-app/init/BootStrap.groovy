@@ -1,4 +1,4 @@
-import com.library*
+import com.library.*
 class BootStrap {
 
     def init = { servletContext ->
@@ -12,9 +12,9 @@ class BootStrap {
 		def library1=new Library(	location:'Sheffield',
 						openingHours:'09:00-18:00',
 						book:'How to animate 101',
-						student:'Jane Armando',
-						librarian:'Noah Dell',
-						library1.addTolibrarians(Librarian)).save()
+						student:student1,
+						librarian:librarian1).save()
+						
 
 
 		def book1=new Book(		title:'How to animate 101',
@@ -22,24 +22,24 @@ class BootStrap {
 						isbn:'12qwerty',
 						dateBorrowed:'12/04/2016',
 						returnDate:'22/04/2016',
-						student:'Jane Armando').save()
+						student:student1).save()
+						
 
 			
 		def student1=new Student(	name:'Jane Armando',
 						email:'JaneArmando@student.ac.uk',
 						studentid:'JA212',
-						course:'Interactive media with Animation').save()
-
+						course:course1).save()
+						
 
 
 		def course1=new Course(		title:'Interactive media with Animation',
 						department:'Computing',
 						description:'''Lorem ipsum dolor sit amet, ad sea solum brute sensibus, te summo senserit vix, mel reque corpora vulputate ei.''',
 						tutor:'Joe Jojo',
-						code:'IMA101'.save()
+						code:'IMA101').save()
 					
-    }
-
+}   
 
     def destroy = {
     }
