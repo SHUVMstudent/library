@@ -3,9 +3,11 @@ package com.library
 class Library {
 String location
 String openingHours
-String book
-String student
-String librarian
+Book book
+Student student
+Librarian librarian
+
+static hasMany=[librarians:Librarian, books:Book, students:Student]
 
 String toString(){
 "$location, $openingHours"
